@@ -6,7 +6,7 @@ class Category(models.Model):
     name = models.CharField(max_length=165)
 
     def __str__(self):
-        return self.name
+        return str(self.id) + " " + str(self.name)
      
 # class Author(models.Model):
 #     name = models.CharField(max_length=165)
